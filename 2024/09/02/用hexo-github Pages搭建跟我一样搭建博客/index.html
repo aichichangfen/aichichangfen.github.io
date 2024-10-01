@@ -19,12 +19,12 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"aichichangfen.top","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.21.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="前言 emm，这几天初中都开始开学了，我也一样，所以这章是赶时间发的，有错误也可以在评论区指出，多多包涵，求了~  介绍  GitHub Pages 是什么？ GitHub Pages 是由 GitHub 官方提供的一种免费的静态站点托管服务，让我们可以在 GitHub 仓库里托管和发布自己的静态网站页面，就好比是免费服务器。  2.Hexo 是什么？ hexo是快速、简洁且高效的博客框架，基于">
+    <meta name="description" content="前言emm，这几天初中都开始开学了，我也一样，所以这章是赶时间发的，有错误也可以在评论区指出，多多包涵，求了~ 介绍 GitHub Pages 是什么？GitHub Pages 是由 GitHub 官方提供的一种免费的静态站点托管服务，让我们可以在 GitHub 仓库里托管和发布自己的静态网站页面，就好比是免费服务器。  2.Hexo 是什么？hexo是快速、简洁且高效的博客框架，基于 Node.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="用hexo+github Pages搭建跟我一样搭建博客">
 <meta property="og:url" content="https://aichichangfen.top/2024/09/02/%E7%94%A8hexo-github%20Pages%E6%90%AD%E5%BB%BA%E8%B7%9F%E6%88%91%E4%B8%80%E6%A0%B7%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/index.html">
 <meta property="og:site_name" content="爱吃肠粉拌辣椒的百宝箱">
-<meta property="og:description" content="前言 emm，这几天初中都开始开学了，我也一样，所以这章是赶时间发的，有错误也可以在评论区指出，多多包涵，求了~  介绍  GitHub Pages 是什么？ GitHub Pages 是由 GitHub 官方提供的一种免费的静态站点托管服务，让我们可以在 GitHub 仓库里托管和发布自己的静态网站页面，就好比是免费服务器。  2.Hexo 是什么？ hexo是快速、简洁且高效的博客框架，基于">
+<meta property="og:description" content="前言emm，这几天初中都开始开学了，我也一样，所以这章是赶时间发的，有错误也可以在评论区指出，多多包涵，求了~ 介绍 GitHub Pages 是什么？GitHub Pages 是由 GitHub 官方提供的一种免费的静态站点托管服务，让我们可以在 GitHub 仓库里托管和发布自己的静态网站页面，就好比是免费服务器。  2.Hexo 是什么？hexo是快速、简洁且高效的博客框架，基于 Node.">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://www.helloimg.com/i/2024/09/03/66d6ddb475ccb.png">
 <meta property="og:image" content="https://www.helloimg.com/i/2024/09/03/66d6ddb406448.png">
@@ -148,7 +148,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text"> 前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BB%8B%E7%BB%8D"><span class="nav-number">2.</span> <span class="nav-text"> 介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%89%8D%E7%BD%AE%E8%A6%81%E6%B1%82"><span class="nav-number">3.</span> <span class="nav-text"> 前置要求</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%97%A8%E5%97%A8%E5%97%A8%E5%BC%80%E5%A7%8B%E5%AE%89%E8%A3%85hexo"><span class="nav-number">4.</span> <span class="nav-text"> 嗨嗨嗨，开始安装hexo</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%90%BC%E5%90%BC~%E6%9C%89%E7%BD%91%E7%AB%99%E4%BA%86%E5%88%9B%E5%BB%BA-ssh-%E5%AF%86%E5%8C%99"><span class="nav-number">5.</span> <span class="nav-text"> 吼吼~有网站了，创建 SSH 密匙</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%A8%8D%E5%AE%89%E5%8B%BF%E8%BA%81%E5%85%88%E5%9C%A8-github-%E4%B8%AD%E6%B7%BB%E5%8A%A0ssh%E5%AF%86%E9%92%A5"><span class="nav-number">6.</span> <span class="nav-text"> 稍安勿躁，先在 GitHub 中添加SSH密钥</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%BF%AB%E4%BA%86%E7%8E%B0%E5%9C%A8%E9%AA%8C%E8%AF%81%E8%BF%9E%E6%8E%A5"><span class="nav-number">7.</span> <span class="nav-text"> 快了，现在验证连接</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA-github-%E4%BB%93%E5%BA%93%E4%BA%86%E5%93%A6"><span class="nav-number">8.</span> <span class="nav-text"> 创建 GitHub 仓库了哦</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9%E4%BB%A5%E4%B8%8A%E4%BC%A0%E7%BD%91%E7%AB%99"><span class="nav-number">9.</span> <span class="nav-text"> 修改以上传网站</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%8A%E4%BC%A0%E8%87%AA%E5%B7%B1%E7%9A%84%E7%BD%91%E7%AB%99"><span class="nav-number">10.</span> <span class="nav-text"> 上传自己的网站</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%97%A8%E5%97%A8%E5%97%A8%E9%83%A8%E7%BD%B2%E6%88%90%E5%8A%9F%E4%BA%86"><span class="nav-number">11.</span> <span class="nav-text"> 嗨嗨嗨，部署成功了！！！</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BB%93%E8%AF%AD"><span class="nav-number">12.</span> <span class="nav-text"> 结语</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%BF%9B%E9%98%B6%E7%8E%A9%E6%B3%95%E5%92%8C%E7%BE%8E%E5%8C%96"><span class="nav-number">13.</span> <span class="nav-text"> 进阶玩法和美化</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BB%8B%E7%BB%8D"><span class="nav-number">2.</span> <span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%89%8D%E7%BD%AE%E8%A6%81%E6%B1%82"><span class="nav-number">3.</span> <span class="nav-text">前置要求</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%97%A8%E5%97%A8%E5%97%A8%EF%BC%8C%E5%BC%80%E5%A7%8B%E5%AE%89%E8%A3%85hexo"><span class="nav-number">4.</span> <span class="nav-text">嗨嗨嗨，开始安装hexo</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%90%BC%E5%90%BC-%E6%9C%89%E7%BD%91%E7%AB%99%E4%BA%86%EF%BC%8C%E5%88%9B%E5%BB%BA-SSH-%E5%AF%86%E5%8C%99"><span class="nav-number">5.</span> <span class="nav-text">吼吼~有网站了，创建 SSH 密匙</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%A8%8D%E5%AE%89%E5%8B%BF%E8%BA%81%EF%BC%8C%E5%85%88%E5%9C%A8-GitHub-%E4%B8%AD%E6%B7%BB%E5%8A%A0SSH%E5%AF%86%E9%92%A5"><span class="nav-number">6.</span> <span class="nav-text">稍安勿躁，先在 GitHub 中添加SSH密钥</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%BF%AB%E4%BA%86%EF%BC%8C%E7%8E%B0%E5%9C%A8%E9%AA%8C%E8%AF%81%E8%BF%9E%E6%8E%A5"><span class="nav-number">7.</span> <span class="nav-text">快了，现在验证连接</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA-GitHub-%E4%BB%93%E5%BA%93%E4%BA%86%E5%93%A6"><span class="nav-number">8.</span> <span class="nav-text">创建 GitHub 仓库了哦</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9%E4%BB%A5%E4%B8%8A%E4%BC%A0%E7%BD%91%E7%AB%99"><span class="nav-number">9.</span> <span class="nav-text">修改以上传网站</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%8A%E4%BC%A0%E8%87%AA%E5%B7%B1%E7%9A%84%E7%BD%91%E7%AB%99"><span class="nav-number">10.</span> <span class="nav-text">上传自己的网站</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%97%A8%E5%97%A8%E5%97%A8%EF%BC%8C%E9%83%A8%E7%BD%B2%E6%88%90%E5%8A%9F%E4%BA%86%EF%BC%81%EF%BC%81%EF%BC%81"><span class="nav-number">11.</span> <span class="nav-text">嗨嗨嗨，部署成功了！！！</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BB%93%E8%AF%AD"><span class="nav-number">12.</span> <span class="nav-text">结语</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%BF%9B%E9%98%B6%E7%8E%A9%E6%B3%95%E5%92%8C%E7%BE%8E%E5%8C%96"><span class="nav-number">13.</span> <span class="nav-text">进阶玩法和美化</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -291,69 +291,28 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><h1 id="前言"><a class="markdownIt-Anchor" href="#前言"></a> 前言</h1>
-<p>emm，这几天初中都开始开学了，我也一样，所以这章是赶时间发的，有错误也可以在评论区指出，多多包涵，求了~</p>
-<h1 id="介绍"><a class="markdownIt-Anchor" href="#介绍"></a> 介绍</h1>
-<ol>
-<li>GitHub Pages 是什么？<br />
-GitHub Pages 是由 GitHub 官方提供的一种免费的静态站点托管服务，让我们可以在 GitHub 仓库里托管和发布自己的静态网站页面，就好比是免费服务器。</li>
+    <div class="post-body" itemprop="articleBody"><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>emm，这几天初中都开始开学了，我也一样，所以这章是赶时间发的，有错误也可以在评论区指出，多多包涵，求了~</p>
+<h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><ol>
+<li>GitHub Pages 是什么？<br>GitHub Pages 是由 GitHub 官方提供的一种免费的静态站点托管服务，让我们可以在 GitHub 仓库里托管和发布自己的静态网站页面，就好比是免费服务器。</li>
 </ol>
-<p>2.Hexo 是什么？<br />
-hexo是快速、简洁且高效的博客框架，基于 Node.js 运行，可以将我们撰写的 Markdown 文档快速解析渲染成静态的 HTML 网页。<br />
-而且可用的主题非常多，可以足够个性化你的博客。<br />
-<a href="%5BHexo%5D(https://hexo.io/zh-cn/)">Hexo官网</a></p>
-<h1 id="前置要求"><a class="markdownIt-Anchor" href="#前置要求"></a> 前置要求</h1>
-<p>1.安装需要的软件<br />
-因为hexo是由Node.js运行的，所以要安装Node.js和Git来编写<br />
-Git 官网: <a target="_blank" rel="noopener" href="https://git-scm.com/">Git (git-scm.com)</a><br />
-Node.js官网：<a target="_blank" rel="noopener" href="https://nodejs.org/zh-cn/">Node.js — 在任何地方运行 JavaScript (nodejs.org)</a><br />
-如果打不开，也可以使用我已经下载好的安装，下载链接：[下载链接](<a target="_blank" rel="noopener" href="https://wwwz.lanzout.com/if1TE28zuyfa">前置安装包.zip - 蓝奏云 (lanzout.com)</a>)<br />
-下载后得到压缩包，解压后有两个文件，打开安装即可。<br />
-2。注册GitHub<br />
-注册github也很简单，<a href="%5BGitHub%5D(https://github.com/)">GitHub官网</a>，打开后注册即可，记得要备一个邮箱，QQ邮箱也可以，要是不会，可以到网上搜搜。</p>
-<h1 id="嗨嗨嗨开始安装hexo"><a class="markdownIt-Anchor" href="#嗨嗨嗨开始安装hexo"></a> 嗨嗨嗨，开始安装hexo</h1>
-<p>打开hexo官网：<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">https://hexo.io/zh-cn/</a> ，打开后划到这里<br />
-<img src="https://www.helloimg.com/i/2024/09/03/66d6ddb475ccb.png" alt="hexo官网" /><br />
-然后复制第一行，在电脑上随便一个位置创建一个自己喜欢的名字，然后在空白区域右键，win11没有的话，就打开“显示更多选项”，然后打开“Open Git Bash here”<br />
-<img src="https://www.helloimg.com/i/2024/09/03/66d6ddb406448.png" alt="打开git" /><br />
-且把刚复制的，粘贴过来，但不能用Ctrl+V，要右键，选择“Paste”即可<br />
-<img src="https://www.helloimg.com/i/2024/09/03/66d6ddb42292e.png" alt="怎么复制" /><br />
-然后等待Git中发生变化时，把剩下的四行都逐一复制过来，直到出现一下页面，并复制黄框中的网址<br />
-<img src="https://www.helloimg.com/i/2024/09/03/66d6ddb430588.png" alt="成功示例" /><br />
-到浏览器中打开，如果你看到以下页面<br />
-<img src="https://www.helloimg.com/i/2024/09/03/66d6ddb516970.png" alt="博客搭建成功" /><br />
-那么恭喜你，你已经有一个博客了，但现在还不能给别人看，那么下面是部署到GitHub的教程。</p>
-<h1 id="吼吼~有网站了创建-ssh-密匙"><a class="markdownIt-Anchor" href="#吼吼~有网站了创建-ssh-密匙"></a> 吼吼~有网站了，创建 SSH 密匙</h1>
-<p>在刚刚的Git里Ctrl+C关掉网站，如何输出这三条命令：</p>
+<p>2.Hexo 是什么？<br>hexo是快速、简洁且高效的博客框架，基于 Node.js 运行，可以将我们撰写的 Markdown 文档快速解析渲染成静态的 HTML 网页。<br>而且可用的主题非常多，可以足够个性化你的博客。<br><a href="%5BHexo%5D(https://hexo.io/zh-cn/)">Hexo官网</a></p>
+<h1 id="前置要求"><a href="#前置要求" class="headerlink" title="前置要求"></a>前置要求</h1><p>1.安装需要的软件<br>因为hexo是由Node.js运行的，所以要安装Node.js和Git来编写<br>Git 官网: <a target="_blank" rel="noopener" href="https://git-scm.com/">Git (git-scm.com)</a><br>Node.js官网：<a target="_blank" rel="noopener" href="https://nodejs.org/zh-cn/">Node.js — 在任何地方运行 JavaScript (nodejs.org)</a><br>如果打不开，也可以使用我已经下载好的安装，下载链接：[下载链接](<a target="_blank" rel="noopener" href="https://wwwz.lanzout.com/if1TE28zuyfa">前置安装包.zip - 蓝奏云 (lanzout.com)</a>)<br>下载后得到压缩包，解压后有两个文件，打开安装即可。<br>2。注册GitHub<br>注册github也很简单，<a href="%5BGitHub%5D(https://github.com/)">GitHub官网</a>，打开后注册即可，记得要备一个邮箱，QQ邮箱也可以，要是不会，可以到网上搜搜。</p>
+<h1 id="嗨嗨嗨，开始安装hexo"><a href="#嗨嗨嗨，开始安装hexo" class="headerlink" title="嗨嗨嗨，开始安装hexo"></a>嗨嗨嗨，开始安装hexo</h1><p>打开hexo官网：<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">https://hexo.io/zh-cn/</a> ，打开后划到这里<br><img src="https://www.helloimg.com/i/2024/09/03/66d6ddb475ccb.png" alt="hexo官网"><br>然后复制第一行，在电脑上随便一个位置创建一个自己喜欢的名字，然后在空白区域右键，win11没有的话，就打开“显示更多选项”，然后打开“Open Git Bash here”<br><img src="https://www.helloimg.com/i/2024/09/03/66d6ddb406448.png" alt="打开git"><br>且把刚复制的，粘贴过来，但不能用Ctrl+V，要右键，选择“Paste”即可<br><img src="https://www.helloimg.com/i/2024/09/03/66d6ddb42292e.png" alt="怎么复制"><br>然后等待Git中发生变化时，把剩下的四行都逐一复制过来，直到出现一下页面，并复制黄框中的网址<br><img src="https://www.helloimg.com/i/2024/09/03/66d6ddb430588.png" alt="成功示例"><br>到浏览器中打开，如果你看到以下页面<br><img src="https://www.helloimg.com/i/2024/09/03/66d6ddb516970.png" alt="博客搭建成功"><br>那么恭喜你，你已经有一个博客了，但现在还不能给别人看，那么下面是部署到GitHub的教程。</p>
+<h1 id="吼吼-有网站了，创建-SSH-密匙"><a href="#吼吼-有网站了，创建-SSH-密匙" class="headerlink" title="吼吼~有网站了，创建 SSH 密匙"></a>吼吼~有网站了，创建 SSH 密匙</h1><p>在刚刚的Git里Ctrl+C关掉网站，如何输出这三条命令：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;你的 GitHub 用户名&quot;</span><br><span class="line">git config --global user.email &quot;你的 GitHub 邮箱&quot;</span><br><span class="line">ssh-keygen -t rsa -C &quot;你的 GitHub 邮箱&quot;</span><br></pre></td></tr></table></figure>
 <p>一路回车就行，然后进入C盘里的 C:\Users\ 用户名 .ssh 记得打开“隐藏的项目”，然后用记事本打开 id_rsa.pub 并复制里面的内容。</p>
-<h1 id="稍安勿躁先在-github-中添加ssh密钥"><a class="markdownIt-Anchor" href="#稍安勿躁先在-github-中添加ssh密钥"></a> 稍安勿躁，先在 GitHub 中添加SSH密钥</h1>
-<p>进入 GitHub，进入 Settings，选择左边栏的 SSH and GPG keys，点击 New SSH key，Title（仓库名字）随便取，然后把 id_rsa.pub 里面的内容到复制到 Key 中，点击 Add SSH key即可。</p>
-<h1 id="快了现在验证连接"><a class="markdownIt-Anchor" href="#快了现在验证连接"></a> 快了，现在验证连接</h1>
-<p>依旧在 Git Bash Here 界面中输入：<br />
-ssh -T <a href="mailto:git@github.com">git@github.com</a><br />
-出现 “Hi 你的名字! You’ve successfully authenticated,but GitHub does not provide shell access.”，输入 yes 回车确认。<br />
-若出现下面的提示就是连接成功啦<br />
-<img src="https://www.helloimg.com/i/2024/09/03/66d6e2446ae50.png" alt="连接成功.png" /></p>
-<h1 id="创建-github-仓库了哦"><a class="markdownIt-Anchor" href="#创建-github-仓库了哦"></a> 创建 GitHub 仓库了哦</h1>
-<p>在自己 GitHub 的主页 repository 中点击右上角的 New<br />
-Repository name 中输入：<a target="_blank" rel="noopener" href="http://xn--eqr924avxo.github.io">用户名.github.io</a>，一定要是这个名字！不然不成功。<br />
-勾选 Add a README file<br />
-填好后点击 Create repository 创建仓库。</p>
-<h1 id="修改以上传网站"><a class="markdownIt-Anchor" href="#修改以上传网站"></a> 修改以上传网站</h1>
-<p>现在需要修改_config.yml 文件末尾的 Deployment 部分，修改成如下，修改为你的用户名与仓库名就ok了</p>
+<h1 id="稍安勿躁，先在-GitHub-中添加SSH密钥"><a href="#稍安勿躁，先在-GitHub-中添加SSH密钥" class="headerlink" title="稍安勿躁，先在 GitHub 中添加SSH密钥"></a>稍安勿躁，先在 GitHub 中添加SSH密钥</h1><p>进入 GitHub，进入 Settings，选择左边栏的 SSH and GPG keys，点击 New SSH key，Title（仓库名字）随便取，然后把 id_rsa.pub 里面的内容到复制到 Key 中，点击 Add SSH key即可。</p>
+<h1 id="快了，现在验证连接"><a href="#快了，现在验证连接" class="headerlink" title="快了，现在验证连接"></a>快了，现在验证连接</h1><p>依旧在 Git Bash Here 界面中输入：<br>ssh -T <a href="mailto:&#103;&#105;&#116;&#x40;&#x67;&#105;&#116;&#104;&#x75;&#98;&#x2e;&#99;&#111;&#109;">&#103;&#105;&#116;&#x40;&#x67;&#105;&#116;&#104;&#x75;&#98;&#x2e;&#99;&#111;&#109;</a><br>出现 “Hi 你的名字! You’ve successfully authenticated,but GitHub does not provide shell access.”，输入 yes 回车确认。<br>若出现下面的提示就是连接成功啦<br><img src="https://www.helloimg.com/i/2024/09/03/66d6e2446ae50.png" alt="连接成功.png"></p>
+<h1 id="创建-GitHub-仓库了哦"><a href="#创建-GitHub-仓库了哦" class="headerlink" title="创建 GitHub 仓库了哦"></a>创建 GitHub 仓库了哦</h1><p>在自己 GitHub 的主页 repository 中点击右上角的 New<br>Repository name 中输入：用户名.github.io，一定要是这个名字！不然不成功。<br>勾选 Add a README file<br>填好后点击 Create repository 创建仓库。</p>
+<h1 id="修改以上传网站"><a href="#修改以上传网站" class="headerlink" title="修改以上传网站"></a>修改以上传网站</h1><p>现在需要修改_config.yml 文件末尾的 Deployment 部分，修改成如下，修改为你的用户名与仓库名就ok了</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:你的仓库名/你的名字.github.io.git</span><br><span class="line">  branch: gh-pages&#x27;</span><br></pre></td></tr></table></figure>
-<h1 id="上传自己的网站"><a class="markdownIt-Anchor" href="#上传自己的网站"></a> 上传自己的网站</h1>
-<p>在git中输入：</p>
+
+<h1 id="上传自己的网站"><a href="#上传自己的网站" class="headerlink" title="上传自己的网站"></a>上传自己的网站</h1><p>在git中输入：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d&#x27;</span><br></pre></td></tr></table></figure>
 <p>然后等待一会即可</p>
-<h1 id="嗨嗨嗨部署成功了"><a class="markdownIt-Anchor" href="#嗨嗨嗨部署成功了"></a> 嗨嗨嗨，部署成功了！！！</h1>
-<p>访问 <a target="_blank" rel="noopener" href="https://xn--6qqv7i7thbp4a.github.io">https://你的名字.github.io</a> ,就可以打开我们的网站了。</p>
-<h1 id="结语"><a class="markdownIt-Anchor" href="#结语"></a> 结语</h1>
-<p>依旧是简单的结语：现在的网站是初始状态，那么下一个文章就是美化网站的教程了。<br />
-希望你们天天开心~</p>
-<h1 id="进阶玩法和美化"><a class="markdownIt-Anchor" href="#进阶玩法和美化"></a> 进阶玩法和美化</h1>
-<p><a href="https://aichichangfen.top/2024/09/03/%E7%BD%91%E7%AB%99%E8%BF%9B%E9%98%B6%E7%8E%A9%E6%B3%95%E5%92%8C%E7%BE%8E%E5%8C%96%E6%95%99%E7%A8%8B/">https://aichichangfen.top/2024/09/03/网站进阶玩法和美化教程/</a></p>
+<h1 id="嗨嗨嗨，部署成功了！！！"><a href="#嗨嗨嗨，部署成功了！！！" class="headerlink" title="嗨嗨嗨，部署成功了！！！"></a>嗨嗨嗨，部署成功了！！！</h1><p>访问 https:&#x2F;&#x2F;你的名字.github.io ,就可以打开我们的网站了。</p>
+<h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p>依旧是简单的结语：现在的网站是初始状态，那么下一个文章就是美化网站的教程了。<br>希望你们天天开心~</p>
+<h1 id="进阶玩法和美化"><a href="#进阶玩法和美化" class="headerlink" title="进阶玩法和美化"></a>进阶玩法和美化</h1><p><a href="https://aichichangfen.top/2024/09/03/%E7%BD%91%E7%AB%99%E8%BF%9B%E9%98%B6%E7%8E%A9%E6%B3%95%E5%92%8C%E7%BE%8E%E5%8C%96%E6%95%99%E7%A8%8B/">https://aichichangfen.top/2024/09/03/%E7%BD%91%E7%AB%99%E8%BF%9B%E9%98%B6%E7%8E%A9%E6%B3%95%E5%92%8C%E7%BE%8E%E5%8C%96%E6%95%99%E7%A8%8B/</a></p>
 
     </div>
 

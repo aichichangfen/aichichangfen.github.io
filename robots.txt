@@ -1,0 +1,21 @@
+# 允许所有用户代理的浏览器爬虫进行访问（爬起数据）
+User-agent: *
+
+# 允许访问的内容
+Allow: /2024/08/11/Wallpaper-Engine免费版/
+Allow: /2024/08/06/虚拟机安装教程/
+Allow: /2024/08/18/格式工厂/
+Allow: /2024/08/10/PotPlayer免广告版/
+Allow: /2024/08/08/班迪录屏/
+Allow: /2024/08/08/KMS系统激活工具/
+Allow: /2024/08/08/Bandizip破解版/
+Allow: /2024/09/27/Internet-Download-Manager(idm)最新激活教程不会弹窗！/
+Allow: /2024/08/07/ChatGPT/
+Allow: /2024/08/06/系统镜像/
+Allow: /2024/08/21/Office免费安装，永久使用！/
+Allow: /2024/09/20/UltraISO(软碟通)/
+Allow: /2024/09/03/网站进阶玩法和美化教程/
+Allow: /2024/09/02/用hexo-github%20Pages搭建跟我一样搭建博客/
+
+# 网站地图Sitemap
+Sitemap: https://aichichangfen.top/sitemap.xml
