@@ -186,6 +186,69 @@
       </tags>
   </entry>
   <entry>
+    <title>六星街里还传来巴扬琴声吗？</title>
+    <url>/2024/10/02/%E5%85%AD%E6%98%9F%E8%A1%97%E9%87%8C%E8%BF%98%E4%BC%A0%E6%9D%A5%E5%B7%B4%E6%89%AC%E7%90%B4%E5%A3%B0%E5%90%97%EF%BC%9F/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>这几天被《苹果香》洗脑了，我先开始是看这个版本的，一个黑曼巴边肘击边唱歌</p>
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe
+src="https://www.bilibili.com/video/BV1XQxWe1EeL/?spm_id_from=333.337.search-card.all.click&vd_source=47a189ccde171ff48e5f69808d55ea4e" scrolling="no" border="0"
+frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%;
+height: 100%; left: 0; top: 0;"> </iframe></div>
+
+<p>然后看到UP主“一根华仔”（也是我看到第一个曼波视频作者）做的《苹果香》赛马娘版的，感觉这个更好听</p>
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe
+src="https://www.bilibili.com/video/BV1tUtrebEh5/?spm_id_from=333.1007.tianma.11-2-40.click&vd_source=47a189ccde171ff48e5f69808d55ea4e" scrolling="no" border="0"
+frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%;
+height: 100%; left: 0; top: 0;"> </iframe></div>]]></content>
+      <categories>
+        <category>唠嗑</category>
+      </categories>
+      <tags>
+        <tag>-唠嗑 -发神经</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>我在搭建Hexo框架网站时踩过的坑和血压飙升的事情</title>
+    <url>/2024/10/03/%E6%88%91%E5%9C%A8%E6%90%AD%E5%BB%BAHexo%E6%A1%86%E6%9E%B6%E7%BD%91%E7%AB%99%E6%97%B6%E8%B8%A9%E8%BF%87%E7%9A%84%E5%9D%91%E5%92%8C%E8%A1%80%E5%8E%8B%E9%A3%99%E5%8D%87%E7%9A%84%E4%BA%8B%E6%83%85/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>之前发了[用hexo+github Pages搭建跟我一样搭建博客](<a href="https://aichichangfen.top/2024/09/02/%E7%94%A8hexo-github">https://aichichangfen.top/2024/09/02/用hexo-github</a> Pages搭建跟我一样搭建博客)和<a href="https://aichichangfen.top/2024/09/03/%E7%BD%91%E7%AB%99%E8%BF%9B%E9%98%B6%E7%8E%A9%E6%B3%95%E5%92%8C%E7%BE%8E%E5%8C%96%E6%95%99%E7%A8%8B/">网站进阶玩法和美化教程  </a>，这期就发“我在个性化Hexo时踩过的坑和血压飙升的事情”。</p>
+<h1 id="不要喜新厌旧"><a href="#不要喜新厌旧" class="headerlink" title="不要喜新厌旧"></a>不要喜新厌旧</h1><p>如果你也是小白，那么你应该遇到过在GBH运行</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">hexo cl &amp; hexo g &amp; hexo d</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>时，发现public文件夹里是空的，除了分类，标签……文件夹外，那么这可能和Node.js的版本有关，可能太高了，所以先把Node.js彻底卸载，然后再去<a href="https://nodejs.org/zh-cn/">Node.js — 在任何地方运行 JavaScript (nodejs.org)</a>重新下载，首先打开“下载”，选择“预构建安装程序”，</p>
+<p>展开版本，注意！这里很重要，一定要选后面带（LTS）的！一定要选后面带（LTS）的！一定要选后面带（LTS）的！然后下载照常安装即可。</p>
+<h1 id="修改配置文件时记得要备份"><a href="#修改配置文件时记得要备份" class="headerlink" title="修改配置文件时记得要备份"></a>修改配置文件时记得要备份</h1><p>你应该知道我为什么换博客，就是我在改hexo的配置文件时，<strong>忘记备份了</strong>，我也不知道我自己改了什么，然后就直接</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">hexo cl</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>之后GBH就写出黄带红我最不喜欢的颜色，那是我大喊：<strong>我焯！！！</strong>，我还想着看哪里坏了，直到我看到了光，嗨嗨嗨！我备份了我直接把配置文件替换，重新</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">hexo cl</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>直到我又看到了黄带红，我直接拿筷子，水泥！@#￥%……&amp;<em>（</em>（&amp;……%#￥%</p>
+<p>然后我便放弃了这个博客，之后我又创建了一个新博客，就现在你看到的，我也把之前的博文转到这个博客。</p>
+<h1 id="主题的正确打开方式"><a href="#主题的正确打开方式" class="headerlink" title="主题的正确打开方式"></a>主题的正确打开方式</h1><p>之前的<a href="https://aichichangfen.top/2024/09/03/%E7%BD%91%E7%AB%99%E8%BF%9B%E9%98%B6%E7%8E%A9%E6%B3%95%E5%92%8C%E7%BE%8E%E5%8C%96%E6%95%99%E7%A8%8B/">网站进阶玩法和美化教程  </a>里有讲怎么安装，但是没说明是npm安装还是直接克隆仓库。</p>
+<p>其实npm安装，”themes“文件夹里是没有主题文件夹的，所以直接克隆仓库，”themes“文件夹就会又主题文件夹了。</p>
+<p><img src="https://www.helloimg.com/i/2024/10/02/66fd5e03cfafa.png" alt="复刻仓库和npm安装.png"></p>
+<p>复制后在GBH上粘贴回车即可安装。</p>
+<h1 id="多学法语和命令"><a href="#多学法语和命令" class="headerlink" title="多学法语和命令"></a>多学法语和命令</h1><p>记得我刚开始搭建网站的时候，只知道hexo cl &amp; hexo g &amp; hexo d，和hexo new ”“，其他的都不会，天天问别人，还被别人骂。</p>
+<p>所以我找了markdown，Hexo官方法语教学文档。</p>
+<p><a href="https://markdown.com.cn/cheat-sheet.html">Markdown 语法速查表 | Markdown 教程</a></p>
+<p><a href="https://hexo.io/zh-cn/docs/commands">指令 | Hexo</a></p>
+<h2 id="赛博活佛Cloudflare不要白不要"><a href="#赛博活佛Cloudflare不要白不要" class="headerlink" title="赛博活佛Cloudflare不要白不要"></a>赛博活佛Cloudflare不要白不要</h2><p><strong>介绍</strong>：</p>
+<p>Cloudflare是一家<strong>美国的跨国科技企业</strong>，总部位于 旧金山，在英国 伦敦 亦设有办事处。 Cloudflare以向客户提供网站 安全管理 、 性能优化 及相关的 技术支持 为主要业务。</p>
+<p><strong>特点</strong>：Cloudflare也是<strong>全球最大的DNS商</strong>，还提供免费的CDN，邮局，域名解析，DDOS防护等等</p>
+<p>如果你不会使用，下面都是些使用教程，你可看看：</p>
+<p><a href="https://blog.csdn.net/techshrimp/article/details/139684106">Cloudflare浑身都是宝，普通用户能白嫖多少服务？盘点cloudflare的免费功能_cloudfare-CSDN博客</a></p>
+<p><a href="https://xueqiu.com/6623660105/162578206">Cloudflare笔记（二）更完整的介绍 Cloudflare , Inc.经营一个云平台，为不同规模和地域的企业提供网络服务。该公司为企业提供一个控制平面，为其… - 雪球 (xueqiu.com)</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/651466743">Cloudflare新手指南：如何快速上手 - 知乎 (zhihu.com)</a></p>
+]]></content>
+      <categories>
+        <category>网站搭建</category>
+      </categories>
+      <tags>
+        <tag>分享</tag>
+        <tag>网站</tag>
+        <tag>发神经</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>搜狗输入法去广告纯净版</title>
     <url>/2024/08/10/%E6%90%9C%E7%8B%97%E8%BE%93%E5%85%A5%E6%B3%95%E5%8E%BB%E5%B9%BF%E5%91%8A%E7%BA%AF%E5%87%80%E7%89%88/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>搜狗输入法，以前可以说是装机必备软件，其打字准、词库全、功能强大、使得输入更高效。只可惜，后期随着不断更新，该软件变得越来越臃肿，广告也越来越多。<br>所以我给大家带来“搜狗输入法去广告纯净版”。包无广告和无捆绑哒!<br>下载地址：<a href="https://wwf.lanzout.com/iRQdj272p78h">文件 (lanzout.com)</a><br>密码:26dq</p>
@@ -197,27 +260,6 @@
         <tag>软件</tag>
         <tag>分享</tag>
         <tag>系统</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>六星街里还传来巴扬琴声吗？</title>
-    <url>/2024/10/02/%E5%85%AD%E6%98%9F%E8%A1%97%E9%87%8C%E8%BF%98%E4%BC%A0%E6%9D%A5%E5%B7%B4%E6%89%AC%E7%90%B4%E5%A3%B0%E5%90%97%EF%BC%9F/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>这几天被《苹果香》洗脑了，我先开始是看这个版本的，一个黑曼巴边肘击边唱歌</p>
-<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe
-src="https://www.bilibili.com/video/BV1XQxWe1EeL/?spm_id_from=333.337.search-card.all.click&vd_source=47a189ccde171ff48e5f69808d55ea4e" scrolling="no" border="0"
-frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%;
-height: 100%; left: 0; top: 0;"> </iframe></div>
-
-<p>然后看到UP主“一根华仔”（也是我看到第一个曼波视频作者）做的《苹果香》赛马娘版的，感觉这个更好听</p>
-<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe 
-src="//player.https://www.bilibili.com/video/BV1tUtrebEh5/?spm_id_from=333.1007.tianma.11-2-40.click&vd_source=47a189ccde171ff48e5f69808d55ea4e" scrolling="no" border="0" 
-frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; 
-height: 100%; left: 0; top: 0;"> </iframe></div>]]></content>
-      <categories>
-        <category>唠嗑</category>
-      </categories>
-      <tags>
-        <tag>-唠嗑 -发神经</tag>
       </tags>
   </entry>
   <entry>
@@ -234,7 +276,7 @@ height: 100%; left: 0; top: 0;"> </iframe></div>]]></content>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;你的 GitHub 用户名&quot;</span><br><span class="line">git config --global user.email &quot;你的 GitHub 邮箱&quot;</span><br><span class="line">ssh-keygen -t rsa -C &quot;你的 GitHub 邮箱&quot;</span><br></pre></td></tr></table></figure>
 <p>一路回车就行，然后进入C盘里的 C:\Users\ 用户名 .ssh 记得打开“隐藏的项目”，然后用记事本打开 id_rsa.pub 并复制里面的内容。</p>
 <h1 id="稍安勿躁，先在-GitHub-中添加SSH密钥"><a href="#稍安勿躁，先在-GitHub-中添加SSH密钥" class="headerlink" title="稍安勿躁，先在 GitHub 中添加SSH密钥"></a>稍安勿躁，先在 GitHub 中添加SSH密钥</h1><p>进入 GitHub，进入 Settings，选择左边栏的 SSH and GPG keys，点击 New SSH key，Title（仓库名字）随便取，然后把 id_rsa.pub 里面的内容到复制到 Key 中，点击 Add SSH key即可。</p>
-<h1 id="快了，现在验证连接"><a href="#快了，现在验证连接" class="headerlink" title="快了，现在验证连接"></a>快了，现在验证连接</h1><p>依旧在 Git Bash Here 界面中输入：<br>ssh -T <a href="mailto:&#x67;&#105;&#x74;&#x40;&#x67;&#105;&#x74;&#x68;&#x75;&#x62;&#46;&#99;&#111;&#109;">&#x67;&#105;&#x74;&#x40;&#x67;&#105;&#x74;&#x68;&#x75;&#x62;&#46;&#99;&#111;&#109;</a><br>出现 “Hi 你的名字! You’ve successfully authenticated,but GitHub does not provide shell access.”，输入 yes 回车确认。<br>若出现下面的提示就是连接成功啦<br><img src="https://www.helloimg.com/i/2024/09/03/66d6e2446ae50.png" alt="连接成功.png"></p>
+<h1 id="快了，现在验证连接"><a href="#快了，现在验证连接" class="headerlink" title="快了，现在验证连接"></a>快了，现在验证连接</h1><p>依旧在 Git Bash Here 界面中输入：<br>ssh -T <a href="mailto:&#x67;&#x69;&#116;&#x40;&#x67;&#x69;&#116;&#x68;&#x75;&#x62;&#x2e;&#x63;&#111;&#x6d;">&#x67;&#x69;&#116;&#x40;&#x67;&#x69;&#116;&#x68;&#x75;&#x62;&#x2e;&#x63;&#111;&#x6d;</a><br>出现 “Hi 你的名字! You’ve successfully authenticated,but GitHub does not provide shell access.”，输入 yes 回车确认。<br>若出现下面的提示就是连接成功啦<br><img src="https://www.helloimg.com/i/2024/09/03/66d6e2446ae50.png" alt="连接成功.png"></p>
 <h1 id="创建-GitHub-仓库了哦"><a href="#创建-GitHub-仓库了哦" class="headerlink" title="创建 GitHub 仓库了哦"></a>创建 GitHub 仓库了哦</h1><p>在自己 GitHub 的主页 repository 中点击右上角的 New<br>Repository name 中输入：用户名.github.io，一定要是这个名字！不然不成功。<br>勾选 Add a README file<br>填好后点击 Create repository 创建仓库。</p>
 <h1 id="修改以上传网站"><a href="#修改以上传网站" class="headerlink" title="修改以上传网站"></a>修改以上传网站</h1><p>现在需要修改_config.yml 文件末尾的 Deployment 部分，修改成如下，修改为你的用户名与仓库名就ok了</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:你的仓库名/你的名字.github.io.git</span><br><span class="line">  branch: gh-pages&#x27;</span><br></pre></td></tr></table></figure>
@@ -244,7 +286,8 @@ height: 100%; left: 0; top: 0;"> </iframe></div>]]></content>
 <p>然后等待一会即可</p>
 <h1 id="嗨嗨嗨，部署成功了！！！"><a href="#嗨嗨嗨，部署成功了！！！" class="headerlink" title="嗨嗨嗨，部署成功了！！！"></a>嗨嗨嗨，部署成功了！！！</h1><p>访问 https:&#x2F;&#x2F;你的名字.github.io ,就可以打开我们的网站了。</p>
 <h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p>依旧是简单的结语：现在的网站是初始状态，那么下一个文章就是美化网站的教程了。<br>希望你们天天开心~</p>
-<h1 id="进阶玩法和美化"><a href="#进阶玩法和美化" class="headerlink" title="进阶玩法和美化"></a>进阶玩法和美化</h1><p><a href="https://aichichangfen.top/2024/09/03/%E7%BD%91%E7%AB%99%E8%BF%9B%E9%98%B6%E7%8E%A9%E6%B3%95%E5%92%8C%E7%BE%8E%E5%8C%96%E6%95%99%E7%A8%8B/">https://aichichangfen.top/2024/09/03/%E7%BD%91%E7%AB%99%E8%BF%9B%E9%98%B6%E7%8E%A9%E6%B3%95%E5%92%8C%E7%BE%8E%E5%8C%96%E6%95%99%E7%A8%8B/</a></p>
+<h1 id="进阶玩法和美化"><a href="#进阶玩法和美化" class="headerlink" title="进阶玩法和美化"></a>进阶玩法和美化</h1><p>我发的网站美化教程：<a href="https://aichichangfen.top/2024/09/03/%E7%BD%91%E7%AB%99%E8%BF%9B%E9%98%B6%E7%8E%A9%E6%B3%95%E5%92%8C%E7%BE%8E%E5%8C%96%E6%95%99%E7%A8%8B/">https://aichichangfen.top/2024/09/03/%E7%BD%91%E7%AB%99%E8%BF%9B%E9%98%B6%E7%8E%A9%E6%B3%95%E5%92%8C%E7%BE%8E%E5%8C%96%E6%95%99%E7%A8%8B/</a></p>
+<p>我发的搭建博客需要注意的地方：<a href="https://aichichangfen.top/%E6%88%91%E5%9C%A8%E6%90%AD%E5%BB%BAHexo%E6%A1%86%E6%9E%B6%E7%BD%91%E7%AB%99%E6%97%B6%E8%B8%A9%E8%BF%87%E7%9A%84%E5%9D%91%E5%92%8C%E8%A1%80%E5%8E%8B%E9%A3%99%E5%8D%87%E7%9A%84%E4%BA%8B%E6%83%85">https://aichichangfen.top/%E6%88%91%E5%9C%A8%E6%90%AD%E5%BB%BAHexo%E6%A1%86%E6%9E%B6%E7%BD%91%E7%AB%99%E6%97%B6%E8%B8%A9%E8%BF%87%E7%9A%84%E5%9D%91%E5%92%8C%E8%A1%80%E5%8E%8B%E9%A3%99%E5%8D%87%E7%9A%84%E4%BA%8B%E6%83%85</a></p>
 ]]></content>
       <categories>
         <category>网站搭建</category>
