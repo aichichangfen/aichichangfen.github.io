@@ -16,6 +16,7 @@ Allow: /2024/08/21/Office免费安装，永久使用！/
 Allow: /2024/09/20/UltraISO(软碟通)/
 Allow: /2024/09/03/网站进阶玩法和美化教程/
 Allow: /2024/09/02/用hexo-github%20Pages搭建跟我一样搭建博客/
+Allow: /2024/10/03/我在搭建Hexo框架网站时踩过的坑和血压飙升的事情/
 
 # 网站地图Sitemap
 Sitemap: https://aichichangfen.top/sitemap.xml

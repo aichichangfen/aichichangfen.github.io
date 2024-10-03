@@ -264,10 +264,28 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>现在不是中病毒的时代，现在是玩病毒的时代！<br>——爱吃肠粉拌辣椒<br>开个玩笑，想必各位电脑资深爱好者应该听说过电脑病毒，每个病毒各式各样，想看到每个病毒的光彩，但是又不想自己的电脑报废，那么，虚拟机这种东西就诞生了，不管你是资深电脑爱好者，或者在读大学，这都是对你一个挺大的帮助，那么虚拟机怎么选，怎么用，在安装时遇到不懂的故障，这个文章一起帮你搞定</p>
-<h1 id="虚拟机安装与使用"><a href="#虚拟机安装与使用" class="headerlink" title="虚拟机安装与使用"></a>虚拟机安装与使用</h1><p>因为我之前做过虚拟机安装和使用，所以这里不多复述。<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV18w411j7C5/?spm_id_from=333.999.0.0">VM虚拟机如何使用胎教级教程</a></p>
-<h1 id="故障排查"><a href="#故障排查" class="headerlink" title="故障排查"></a>故障排查</h1><p>我虽然在视频里有讲，但是并不是很全面，私信里还有许多人问我，所以这里直接讲完。<br>（1）在安装Windows系统时遇到一个蓝色界面<br><img src="https://vip.helloimg.com/i/2024/08/21/66c5bf9656326.png" alt="boot manager"><br>这种叫“BootManager”说明未引导成功，可以先关闭虚拟机，然后打开虚拟机编辑设置，<br><img src="https://vip.helloimg.com/i/2024/08/21/66c5bf982228d.png" alt="编辑虚拟机"><br>点击选项，高级，然后把BIOS改为UEFI，确定，然后重新打开即可。<br><img src="https://vip.helloimg.com/i/2024/08/21/66c5bf9869cc3.png" alt="UEFI模式"><br>（2）在安装系统时遇到黑屏<br><img src="https://vip.helloimg.com/i/2024/08/21/66c5e9ab24bd7.jpg" alt="Press any key to boot from CD or DVD"><br>这种必须要用鼠标点几下，过一会就可以进入了。<br>（3)无法安装vm tools<br>如果你成功安装了系统，但显示无法安装vm tools，那么有可能你装的是修改版系统，也就是精简版，这种一般都是占用很好多空间，虽然节省了空间，经常报错、缺少dll和无法安装vm tools就是它的致命弱点！如果你空间不足可以用用，但你是欣赏病毒的，那我不建议你安装精简版系统，对于电脑小白，我建议安装原版win10，镜像在我上个文章有。当然，如果你安装的是win7，那么这属于正常，我在B站上找个文章，你们可以自己去看，网址:<a target="_blank" rel="noopener" href="https://www.bilibili.com/read/cv23621999/">https://www.bilibili.com/read/cv23621999/</a> 。</p>
-<h1 id="安装完后很卡？"><a href="#安装完后很卡？" class="headerlink" title="安装完后很卡？"></a>安装完后很卡？</h1><p>安装完后很卡，有可能是你调的CPU核数和运行内存太少了，可以先关闭系统，在左侧有个”编辑虚拟机设置”打开它内存是看物理机的内存调的，物理机是8G，虚拟机就调4G，16G就调8G，32就调12G，CPU也是看这调，一般是处理器数量调4，每个处理器的内核数量调2，这是我觉得最好的调法。<br>当然还有另一种问题，就是你把虚拟机系统安装在了机械硬盘，这不卡怪谁呢？所以最好安在固态硬盘，除非固态没空间了。</p>
+          <h1 id="前言"><a class="markdownIt-Anchor" href="#前言"></a> 前言</h1>
+<p>现在不是中病毒的时代，现在是玩病毒的时代！<br />
+——爱吃肠粉拌辣椒<br />
+开个玩笑，想必各位电脑资深爱好者应该听说过电脑病毒，每个病毒各式各样，想看到每个病毒的光彩，但是又不想自己的电脑报废，那么，虚拟机这种东西就诞生了，不管你是资深电脑爱好者，或者在读大学，这都是对你一个挺大的帮助，那么虚拟机怎么选，怎么用，在安装时遇到不懂的故障，这个文章一起帮你搞定</p>
+<h1 id="虚拟机安装与使用"><a class="markdownIt-Anchor" href="#虚拟机安装与使用"></a> 虚拟机安装与使用</h1>
+<p>因为我之前做过虚拟机安装和使用，所以这里不多复述。<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV18w411j7C5/?spm_id_from=333.999.0.0">VM虚拟机如何使用胎教级教程</a></p>
+<h1 id="故障排查"><a class="markdownIt-Anchor" href="#故障排查"></a> 故障排查</h1>
+<p>我虽然在视频里有讲，但是并不是很全面，私信里还有许多人问我，所以这里直接讲完。<br />
+（1）在安装Windows系统时遇到一个蓝色界面<br />
+<img src="https://vip.helloimg.com/i/2024/08/21/66c5bf9656326.png" alt="boot manager" /><br />
+这种叫“BootManager”说明未引导成功，可以先关闭虚拟机，然后打开虚拟机编辑设置，<br />
+<img src="https://vip.helloimg.com/i/2024/08/21/66c5bf982228d.png" alt="编辑虚拟机" /><br />
+点击选项，高级，然后把BIOS改为UEFI，确定，然后重新打开即可。<br />
+<img src="https://vip.helloimg.com/i/2024/08/21/66c5bf9869cc3.png" alt="UEFI模式" /><br />
+（2）在安装系统时遇到黑屏<br />
+<img src="https://vip.helloimg.com/i/2024/08/21/66c5e9ab24bd7.jpg" alt="Press any key to boot from CD or DVD" /><br />
+这种必须要用鼠标点几下，过一会就可以进入了。<br />
+（3)无法安装vm tools<br />
+如果你成功安装了系统，但显示无法安装vm tools，那么有可能你装的是修改版系统，也就是精简版，这种一般都是占用很好多空间，虽然节省了空间，经常报错、缺少dll和无法安装vm tools就是它的致命弱点！如果你空间不足可以用用，但你是欣赏病毒的，那我不建议你安装精简版系统，对于电脑小白，我建议安装原版win10，镜像在我上个文章有。当然，如果你安装的是win7，那么这属于正常，我在B站上找个文章，你们可以自己去看，网址:<a target="_blank" rel="noopener" href="https://www.bilibili.com/read/cv23621999/">https://www.bilibili.com/read/cv23621999/</a> 。</p>
+<h1 id="安装完后很卡"><a class="markdownIt-Anchor" href="#安装完后很卡"></a> 安装完后很卡？</h1>
+<p>安装完后很卡，有可能是你调的CPU核数和运行内存太少了，可以先关闭系统，在左侧有个”编辑虚拟机设置”打开它内存是看物理机的内存调的，物理机是8G，虚拟机就调4G，16G就调8G，32就调12G，CPU也是看这调，一般是处理器数量调4，每个处理器的内核数量调2，这是我觉得最好的调法。<br />
+当然还有另一种问题，就是你把虚拟机系统安装在了机械硬盘，这不卡怪谁呢？所以最好安在固态硬盘，除非固态没空间了。</p>
 
       
     </div>
@@ -358,8 +376,11 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>你也许是个对电脑一无所知的电脑小白，在网上下载着盗版或者修改版系统镜像；或者是个资深电脑爱好者，对电脑有着浓厚的兴趣，但对众多的系统镜像，不知改如何下手，不妨看看这篇文章，不管电脑小白还是电脑爱好者，都有帮助。</p>
-<h1 id="怎么找到正版的系统镜像？"><a href="#怎么找到正版的系统镜像？" class="headerlink" title="怎么找到正版的系统镜像？"></a>怎么找到正版的系统镜像？</h1><p>找到正版镜像无疑就是在微软（Microsoft）官方下，<a target="_blank" rel="noopener" href="https://www.microsoft.com/zh-cn/software-download">微软镜像下载 </a> ，但目前来看，只能下载win11和win10，因为其他版本早已不受支持，不过这对小白有好处，新系统在安装是不会像老系统一样安装时报错，和安装失败。那么你是自资深电脑爱好者，那么MSDN一定是你的不二之选，<a target="_blank" rel="noopener" href="https://msdn.itellyou.cn/">MSDN, 我告诉你 - 做一个安静的工具站 </a> ，上面有着丰富的系统镜像从win3.11到现在的win11都有。<br>当然，如果你想用网盘下载，我这里也有 123网盘 <a target="_blank" rel="noopener" href="https://www.123pan.com/s/mv4wjv-mxli3.html">Windows系统镜像官方版下载丨最新版下载丨绿色版下载丨APP下载-123云盘 </a>  网盘技术支持哔哩哔哩@金莲与大郎</p>
+          <h1 id="前言"><a class="markdownIt-Anchor" href="#前言"></a> 前言</h1>
+<p>你也许是个对电脑一无所知的电脑小白，在网上下载着盗版或者修改版系统镜像；或者是个资深电脑爱好者，对电脑有着浓厚的兴趣，但对众多的系统镜像，不知改如何下手，不妨看看这篇文章，不管电脑小白还是电脑爱好者，都有帮助。</p>
+<h1 id="怎么找到正版的系统镜像"><a class="markdownIt-Anchor" href="#怎么找到正版的系统镜像"></a> 怎么找到正版的系统镜像？</h1>
+<p>找到正版镜像无疑就是在微软（Microsoft）官方下，<a target="_blank" rel="noopener" href="https://www.microsoft.com/zh-cn/software-download">微软镜像下载 </a> ，但目前来看，只能下载win11和win10，因为其他版本早已不受支持，不过这对小白有好处，新系统在安装是不会像老系统一样安装时报错，和安装失败。那么你是自资深电脑爱好者，那么MSDN一定是你的不二之选，<a target="_blank" rel="noopener" href="https://msdn.itellyou.cn/">MSDN, 我告诉你 - 做一个安静的工具站 </a> ，上面有着丰富的系统镜像从win3.11到现在的win11都有。<br />
+当然，如果你想用网盘下载，我这里也有 123网盘 <a target="_blank" rel="noopener" href="https://www.123pan.com/s/mv4wjv-mxli3.html">Windows系统镜像官方版下载丨最新版下载丨绿色版下载丨APP下载-123云盘 </a>  网盘技术支持哔哩哔哩@金莲与大郎</p>
 
       
     </div>
