@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://aichichangfen.top/2024/10/02/%E5%85%AD%E6%98%9F%E8%A1%97%E9%87%8C%E8%BF%98%E4%BC%A0%E6%9D%A5%E5%B7%B4%E6%89%AC%E7%90%B4%E5%A3%B0%E5%90%97%EF%BC%9F/</loc>
+    
+    <lastmod>2024-10-06</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://aichichangfen.top/2024/10/06/%E8%B7%B3%E8%BF%87win11-24h2%E7%A1%AC%E4%BB%B6%E6%A3%80%E6%B5%8B%E7%9A%84%E6%AD%A3%E7%A1%AE%E6%89%93%E5%BC%80%E6%96%B9%E5%BC%8F/</loc>
     
     <lastmod>2024-10-06</lastmod>
@@ -23,15 +32,6 @@
     <loc>https://aichichangfen.top/2024/09/02/%E7%94%A8hexo-github%20Pages%E6%90%AD%E5%BB%BA%E8%B7%9F%E6%88%91%E4%B8%80%E6%A0%B7%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</loc>
     
     <lastmod>2024-10-03</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://aichichangfen.top/2024/10/02/%E5%85%AD%E6%98%9F%E8%A1%97%E9%87%8C%E8%BF%98%E4%BC%A0%E6%9D%A5%E5%B7%B4%E6%89%AC%E7%90%B4%E5%A3%B0%E5%90%97%EF%BC%9F/</loc>
-    
-    <lastmod>2024-10-02</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -289,14 +289,14 @@
   </url>
   
   <url>
-    <loc>https://aichichangfen.top/tags/%E7%BD%91%E7%AB%99/</loc>
+    <loc>https://aichichangfen.top/tags/%E5%94%A0%E5%97%91/</loc>
     <lastmod>2024-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://aichichangfen.top/tags/%E5%94%A0%E5%97%91-%E5%8F%91%E7%A5%9E%E7%BB%8F/</loc>
+    <loc>https://aichichangfen.top/tags/%E7%BD%91%E7%AB%99/</loc>
     <lastmod>2024-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -326,14 +326,14 @@
   </url>
   
   <url>
-    <loc>https://aichichangfen.top/categories/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/</loc>
+    <loc>https://aichichangfen.top/categories/%E5%94%A0%E5%97%91/</loc>
     <lastmod>2024-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://aichichangfen.top/categories/%E5%94%A0%E5%97%91/</loc>
+    <loc>https://aichichangfen.top/categories/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/</loc>
     <lastmod>2024-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
