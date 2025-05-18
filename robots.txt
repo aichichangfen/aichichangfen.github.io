@@ -1,0 +1,29 @@
+# 允许所有用户代理的浏览器爬虫进行访问（爬起数据）
+User-agent: *
+
+# 允许访问的内容
+Allow: /2024/08/11/Wallpaper-Engine免费版/
+Allow: /2024/08/06/虚拟机安装教程/
+Allow: /2024/08/18/格式工厂/
+Allow: /2024/08/10/PotPlayer免广告版/
+Allow: /2024/08/08/班迪录屏/
+Allow: /2024/08/08/KMS系统激活工具/
+Allow: /2024/08/08/Bandizip破解版/
+Allow: /2024/08/06/系统镜像/
+Allow: /2024/08/21/Office免费安装，永久使用！/
+Allow: /2024/09/20/UltraISO(软碟通)/
+Allow: /2024/09/03/网站进阶玩法和美化教程/
+Allow: /2024/09/02/用hexo+github Pages搭建跟我一样搭建博客/
+Allow: /2024/10/03/我在搭建Hexo框架网站时踩过的坑和血压飙升的事情/
+Allow: /hexo从搭建到美化主题到域名配置和使用方法一条龙教程/
+Allow:/2025/01/04/重生之我在任务管理器看视频/
+Allow:/2024/12/08/Typora的激活教程（无弹窗）/
+Allow:/2024/11/28/edge和chrome浏览器怎么选择？/
+Allow:/2024/11/20/AI镜像网站和国内AI的推荐/
+Allow:/2024/11/09/Hexo-Next主题添加友链/
+Allow:/2025/02/22/deepseek的本地部署、使用教程、基本玩法/
+Allow:/2024/12/08/Typora的激活教程（无弹窗）/
+Allow:/2024/11/28/edge和chrome浏览器怎么选择？/
+
+# 网站地图Sitemap
+Sitemap: https://aichichangfen.top/sitemap.xml

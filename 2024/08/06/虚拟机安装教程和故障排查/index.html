@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.ico">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha256-5eIC48iZUHmSlSUz9XtjRyK2mzQkHScZY1WdMaoz74E=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"aichichangfen.top","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.21.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":true,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="前言现在不是中病毒的时代，现在是玩病毒的时代！——爱吃肠粉拌辣椒开个玩笑，想必各位电脑资深爱好者应该听说过电脑病毒，每个病毒各式各样，想看到每个病毒的光彩，但是又不想自己的电脑报废，那么，虚拟机这种东西就诞生了，不管你是资深电脑爱好者，或者在读大学，这都是对你一个挺大的帮助，那么虚拟机怎么选，怎么用，在安装时遇到不懂的故障，这个文章一起帮你搞定 虚拟机安装与使用因为我之前做过虚拟机安装和使用，所以">
+<meta property="og:type" content="article">
+<meta property="og:title" content="虚拟机安装教程和故障排查">
+<meta property="og:url" content="https://aichichangfen.top/2024/08/06/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B%E5%92%8C%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5/index.html">
+<meta property="og:site_name" content="爱吃肠粉拌辣椒的百宝箱">
+<meta property="og:description" content="前言现在不是中病毒的时代，现在是玩病毒的时代！——爱吃肠粉拌辣椒开个玩笑，想必各位电脑资深爱好者应该听说过电脑病毒，每个病毒各式各样，想看到每个病毒的光彩，但是又不想自己的电脑报废，那么，虚拟机这种东西就诞生了，不管你是资深电脑爱好者，或者在读大学，这都是对你一个挺大的帮助，那么虚拟机怎么选，怎么用，在安装时遇到不懂的故障，这个文章一起帮你搞定 虚拟机安装与使用因为我之前做过虚拟机安装和使用，所以">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://vip.helloimg.com/i/2024/08/21/66c5bf9656326.png">
+<meta property="og:image" content="https://vip.helloimg.com/i/2024/08/21/66c5bf982228d.png">
+<meta property="og:image" content="https://vip.helloimg.com/i/2024/08/21/66c5bf9869cc3.png">
+<meta property="og:image" content="https://vip.helloimg.com/i/2024/08/21/66c5e9ab24bd7.jpg">
+<meta property="article:published_time" content="2024-08-06T13:30:30.000Z">
+<meta property="article:modified_time" content="2025-02-22T09:48:54.174Z">
+<meta property="article:author" content="爱吃肠粉拌辣椒">
+<meta property="article:tag" content="分享">
+<meta property="article:tag" content="软件">
+<meta property="article:tag" content="瞎聊">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://vip.helloimg.com/i/2024/08/21/66c5bf9656326.png">
+
+
+<link rel="canonical" href="https://aichichangfen.top/2024/08/06/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B%E5%92%8C%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://aichichangfen.top/2024/08/06/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B%E5%92%8C%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5/","path":"2024/08/06/虚拟机安装教程和故障排查/","title":"虚拟机安装教程和故障排查"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>虚拟机安装教程和故障排查 | 爱吃肠粉拌辣椒的百宝箱</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<!-- 一言API -->
+<!-- 现代写法，推荐 -->
+<!-- 兼容低版本浏览器 (包括 IE)，可移除 -->
+<script src="https://cdn.jsdelivr.net/npm/bluebird@3/js/browser/bluebird.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@2.0.3/fetch.min.js"></script>
+<!--End-->
+<script>
+  fetch('https://v1.hitokoto.cn')
+    .then(function (res){
+      return res.json();
+    })
+    .then(function (data) {
+      var hitokoto = document.getElementById('hitokoto');
+      hitokoto.innerText = data.hitokoto + '——【' + data.from + '】';
+    })
+    .catch(function (err) {
+      console.error(err);
+    })
+</script>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">爱吃肠粉拌辣椒的百宝箱</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">一个为所有电脑爱好者的一个小帮助的网站，也许会帮到你</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-友链"><a href="/links/" rel="section"><i class="fa fa-link fa-fw"></i>友链</a></li><li class="menu-item menu-item-病毒系列"><a href="https://space.bilibili.com/1834519604/channel/seriesdetail?sid=3748609&ctype=0" rel="section" target="_blank"><i class="custom shipin fa-fw"></i>病毒系列</a></li><li class="menu-item menu-item-系统镜像"><a href="/2024/08/06/%E7%B3%BB%E7%BB%9F%E9%95%9C%E5%83%8F%E5%92%8C%E6%8E%A8%E8%8D%90%E9%95%9C%E5%83%8F/" rel="section"><i class="custom xitongjingxiang fa-fw"></i>系统镜像</a></li><li class="menu-item menu-item-虚拟机"><a href="/2024/08/06/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B%E5%92%8C%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5/" rel="section"><i class="custom xuniji fa-fw"></i>虚拟机</a></li><li class="menu-item menu-item-网站搭建"><a href="/categories/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/" rel="section"><i class="custom wangzhi fa-fw"></i>网站搭建</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="搜索..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8"><span class="nav-number">2.</span> <span class="nav-text">虚拟机安装与使用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5"><span class="nav-number">3.</span> <span class="nav-text">故障排查</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9C%A8%E5%AE%89%E8%A3%85Windows%E7%B3%BB%E7%BB%9F%E6%97%B6%E9%81%87%E5%88%B0%E4%B8%80%E4%B8%AA%E8%93%9D%E8%89%B2%E7%95%8C%E9%9D%A2"><span class="nav-number">3.1.</span> <span class="nav-text">在安装Windows系统时遇到一个蓝色界面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9C%A8%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F%E6%97%B6%E9%81%87%E5%88%B0%E9%BB%91%E5%B1%8F"><span class="nav-number">3.2.</span> <span class="nav-text">在安装系统时遇到黑屏</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%97%A0%E6%B3%95%E5%AE%89%E8%A3%85vm-tools"><span class="nav-number">3.3.</span> <span class="nav-text">无法安装vm tools</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85%E5%AE%8C%E5%90%8E%E5%BE%88%E5%8D%A1"><span class="nav-number">3.4.</span> <span class="nav-text">安装完后很卡</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="爱吃肠粉拌辣椒"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">爱吃肠粉拌辣椒</p>
+  <div class="site-description" itemprop="description">一个为所有电脑爱好者的一个小帮助的网站，也许会帮到你</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">27</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/aichichangfen" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;aichichangfen" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:lajiao@aichichangfen.top" title="E-Mail → mailto:lajiao@aichichangfen.top" rel="noopener me"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://space.bilibili.com/1834519604?spm_id_from=333.1007.0.0" title="bilibili → https:&#x2F;&#x2F;space.bilibili.com&#x2F;1834519604?spm_id_from&#x3D;333.1007.0.0" rel="noopener me" target="_blank"><i class="fab fa-bilibili fa-fw"></i>bilibili</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+        <div class="back-to-top animated" role="button" aria-label="返回顶部">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://aichichangfen.top/2024/08/06/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B%E5%92%8C%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="爱吃肠粉拌辣椒">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="爱吃肠粉拌辣椒的百宝箱">
+      <meta itemprop="description" content="一个为所有电脑爱好者的一个小帮助的网站，也许会帮到你">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="虚拟机安装教程和故障排查 | 爱吃肠粉拌辣椒的百宝箱">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          虚拟机安装教程和故障排查
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2024-08-06 21:30:30" itemprop="dateCreated datePublished" datetime="2024-08-06T21:30:30+08:00">2024-08-06</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2025-02-22 17:48:54" itemprop="dateModified" datetime="2025-02-22T17:48:54+08:00">2025-02-22</time>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>790</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>3 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>现在不是中病毒的时代，现在是玩病毒的时代！<br>——爱吃肠粉拌辣椒<br>开个玩笑，想必各位电脑资深爱好者应该听说过电脑病毒，每个病毒各式各样，想看到每个病毒的光彩，但是又不想自己的电脑报废，那么，虚拟机这种东西就诞生了，不管你是资深电脑爱好者，或者在读大学，这都是对你一个挺大的帮助，那么虚拟机怎么选，怎么用，在安装时遇到不懂的故障，这个文章一起帮你搞定</p>
+<h1 id="虚拟机安装与使用"><a href="#虚拟机安装与使用" class="headerlink" title="虚拟机安装与使用"></a>虚拟机安装与使用</h1><p>因为我之前做过虚拟机安装和使用，所以这里不多复述：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV18w411j7C5/?spm_id_from=333.999.0.0">VM虚拟机如何使用胎教级教程</a></p>
+<span id="more"></span>
+
+<h1 id="故障排查"><a href="#故障排查" class="headerlink" title="故障排查"></a>故障排查</h1><p>我虽然在视频里有讲，但是并不是很全面，私信里还有许多人问我，所以这里直接讲完。</p>
+<h2 id="在安装Windows系统时遇到一个蓝色界面"><a href="#在安装Windows系统时遇到一个蓝色界面" class="headerlink" title="在安装Windows系统时遇到一个蓝色界面"></a>在安装Windows系统时遇到一个蓝色界面</h2><p><img src="https://vip.helloimg.com/i/2024/08/21/66c5bf9656326.png" alt="boot manager"><br>这种叫“BootManager”说明未引导成功，可以先关闭虚拟机，然后打开虚拟机编辑设置，<br><img src="https://vip.helloimg.com/i/2024/08/21/66c5bf982228d.png" alt="编辑虚拟机"><br>点击选项，高级，然后把BIOS改为UEFI，确定，然后重新打开即可。<br><img src="https://vip.helloimg.com/i/2024/08/21/66c5bf9869cc3.png" alt="UEFI模式"></p>
+<h2 id="在安装系统时遇到黑屏"><a href="#在安装系统时遇到黑屏" class="headerlink" title="在安装系统时遇到黑屏"></a>在安装系统时遇到黑屏</h2><p><img src="https://vip.helloimg.com/i/2024/08/21/66c5e9ab24bd7.jpg" alt="Press any key to boot from CD or DVD"><br>这种必须要用鼠标点几下，过一会就可以进入了。</p>
+<h2 id="无法安装vm-tools"><a href="#无法安装vm-tools" class="headerlink" title="无法安装vm tools"></a>无法安装vm tools</h2><p>如果你成功安装了系统，但显示无法安装vm tools，那么有可能你装的是修改版系统，也就是精简版，这种一般都是占用很好多空间，虽然节省了空间，经常报错、缺少dll和无法安装vm tools就是它的致命弱点！如果你空间不足可以用用，但你是欣赏病毒的，那我不建议你安装精简版系统，对于电脑小白，我建议安装原版win10，镜像在我上个文章有。当然，如果你安装的是win7，那么这属于正常现象，因为微软更新了驱动程序签名算法，在2019年开始弃用SHA1，改用SHA2，而VMware Tools驱动程序使用的是SHA2，而win7只支持SHA1，需要下载安装补丁kb4474419来支持SHA2算法。</p>
+<p><a target="_blank" rel="noopener" href="https://www.catalog.update.microsoft.com/Search.aspx?q=kb4474419">下载地址【点击打开】</a></p>
+<p>然后选择自己的系统版本，在虚拟机安装后重启，即可。</p>
+<p>但如果不行，那就没办法了…</p>
+<h2 id="安装完后很卡"><a href="#安装完后很卡" class="headerlink" title="安装完后很卡"></a>安装完后很卡</h2><p>安装完后很卡，有可能是你调的CPU核数和运行内存太少了，可以先关闭系统，在左侧有个”编辑虚拟机设置”打开它内存是看物理机的内存调的，物理机是8G，虚拟机就调4G，16G就调8G，32就调12G，CPU也是看这调，一般是处理器数量调4，每个处理器的内核数量调2，这是我觉得最好的调法。<br>当然还有另一种问题，就是你把虚拟机系统安装在了机械硬盘，这不卡怪谁呢？所以最好安在固态硬盘，除非固态没空间了(emm…)。</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>爱吃肠粉拌辣椒
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://aichichangfen.top/2024/08/06/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B%E5%92%8C%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5/" title="虚拟机安装教程和故障排查">https://aichichangfen.top/2024/08/06/虚拟机安装教程和故障排查/</a>
+  </li>
+  <li class="post-copyright-license">
+      <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/%E5%88%86%E4%BA%AB/" rel="tag"># 分享</a>
+              <a href="/tags/%E8%BD%AF%E4%BB%B6/" rel="tag"># 软件</a>
+              <a href="/tags/%E7%9E%8E%E8%81%8A/" rel="tag"># 瞎聊</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2024/08/06/%E7%B3%BB%E7%BB%9F%E9%95%9C%E5%83%8F%E5%92%8C%E6%8E%A8%E8%8D%90%E9%95%9C%E5%83%8F/" rel="prev" title="系统镜像指南">
+                  <i class="fa fa-angle-left"></i> 系统镜像指南
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2024/08/07/Internet%20Download%20Manager(idm)%E4%B8%8B%E8%BD%BD%E5%99%A8/" rel="next" title="Internet Download Manager(idm)下载器">
+                  Internet Download Manager(idm)下载器 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments gitalk-container"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">爱吃肠粉拌辣椒</span>
+  </div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+      <span>站点总字数：</span>
+    <span title="站点总字数">20k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span>站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">1:13</span>
+  </span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div><script color="0,0,255" opacity="0.5" zIndex="-1" count="99" src="https://cdn.jsdelivr.net/npm/canvas-nest.js@1/dist/canvas-nest.js"></script>
+
+<script type="text/javascript" src="/js/click_love.js"></script>
+
+<div>
+<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+<script>
+    var now = new Date(); 
+    function createtime() { 
+        var grt= new Date("08/08/2024 12:00:00");//在此处修改你的建站时间
+        now.setTime(now.getTime()+250); 
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
+        document.getElementById("timeDate").innerHTML = "本站已运行 "+dnum+" 天 "; 
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
+    } 
+setInterval("createtime()",250);
+</script>
+</div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+
+
+  
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.css" integrity="sha256-AJnUHL7dBv6PGaeyPQJcgQPDjt/Hn/PvYZde1iqfp8U=" crossorigin="anonymous">
+
+<script class="next-config" data-name="gitalk" type="application/json">{"enable":true,"github_id":"aichichangfen","repo":"aichichangfen.github.io","client_id":"Ov23li8RKGOMNIUzaZZE","client_secret":"6bbcf767531cf8388bbc699b8fde71c3980514e1","admin_user":"aichichangfen","distraction_free_mode":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token","language":"zh-CN","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.min.js","integrity":"sha256-MVK9MGD/XJaGyIghSVrONSnoXoGh3IFxLw0zfvzpxR4="},"path_md5":"6bfcd6cd1450e47687280dba7021888c"}</script>
+<script src="/js/third-party/comments/gitalk.js"></script>
+
+</body>
+</html>
